@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="admin-menu">
+    <button onclick="voltarHome()">🏠 Home</button>
+    <button onclick="logout()">🚪 Sair</button>
+  </div>
+
+  <h2>Gerenciar Produtos</h2>
+
+  <div class="form-produto">
+    <input type="hidden" id="id">
+    <input type="text" id="nome" placeholder="Nome do produto">
+    <input type="text" id="preco" placeholder="Preço">
+    <input type="text" id="imagem" placeholder="URL da imagem">
+    <input type="text" id="link" placeholder="Link de compra">
+    <button onclick="salvarProduto()">Salvar</button>
+  </div>
+
+  <hr>
+  <h3>Produtos Cadastrados</h3>
+  <div id="lista-produtos"></div>
+
+  <script>
+    if (localStorage.getItem("logado") !== "true") {
+      window.location.href = "login.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("logado");
+      window.location.href = "login.html";
+    }
+
+    function voltarHome() {
+      window.location.href = "../index.html";
+    }
+
+    function salvarProduto() {
+      const id = document.getElementById("id").value;
+      const nome = document.getElementById("nome").value;
+      const preco = document.getElementById("preco").value;
+      const imagem = document.getElementById("imagem").value;
+      const link = document.getElementById("link").value;
+
+      let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+
+      if (id) {
+        // Editando
+        produtos[id] = { nome, preco, imagem, link };
+      } else {
+        // Novo produto
+        produtos.push({ nome, preco, imagem, link });
+      }
+
+      localStorage.setItem("produtos", JSON.stringify(produtos));
+      limparFormulario();
+      listarProdutos();
+    }
+
+    function editarProduto(index) {
+      const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+      const p = produtos[index];
+
+      document.getElementById("id").value = index;
+      document.getElementById("nome").value = p.nome;
+      document.getElementById("preco").value = p.preco;
+      document.getElementById("imagem").value = p.imagem;
+      document.getElementById("link").value = p.link;
+    }
+
+    function excluirProduto(index) {
+      let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+      if (confirm("Tem certeza que deseja excluir este produto?")) {
+        produtos.splice(index, 1);
+        localStorage.setItem("produtos", JSON.stringify(produtos));
+        listarProdutos();
+      }
+    }
+
+    function listarProdutos() {
+      const lista = document.getElementById("lista-produtos");
+      const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+
+      lista.innerHTML = "";
+      produtos.forEach((p, i) => {
+        lista.innerHTML += `
+          <div class="produto-admin">
+            <strong>${p.nome}</strong> - ${p.preco}<br>
+            <img src="${p.imagem}" width="100"><br>
+            <a href="${p.link}" target="_blank">Ver Produto</a><br>
+            <button onclick="editarProduto(${i})">Editar</button>
+            <button onclick="excluirProduto(${i})">Excluir</button>
+            <hr>
+          </div>
+        `;
+      });
+    }
+
+    function limparFormulario() {
+      document.getElementById("id").value = "";
+      document.getElementById("nome").value = "";
+      document.getElementById("preco").value = "";
+      document.getElementById("imagem").value = "";
+      document.getElementById("link").value = "";
+    }
+
+    listarProdutos();
+  </script>
+</body>
+</html>
