@@ -102,11 +102,11 @@ p{
 .corpo-categorias{
     max-width: 1080px ;
     margin: auto;
-    padding: 250px;
+    padding-left: 25px;
     padding-right: 25px;
 }
 .col-3{
-    flex-basis: 30px;
+    flex-basis: 30%;
     max-width: 250px;
     margin-bottom: 30px;
 }
