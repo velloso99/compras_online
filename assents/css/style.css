@@ -158,6 +158,7 @@ h4{
 .classificacao ion-icon{ 
     color: var(--cor-padrao);
 }
+/* ---------Ofertas------------*/
 .ofertas{
     background: radial-gradient(var(--cor-btn-hover), var(--cor-padrao));
     margin-top: 80px;
@@ -169,3 +170,33 @@ h4{
 .small{
     color: var(--cor-btn-font);
 }
+/* ---------DEPOIMENTOS------------*/
+.depoimentos{
+    padding-top: 100px;
+}
+.depoimentos  .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition:transform 0.5s ;
+}
+.depoimentos  .col-3:hover{
+    transform: scale(1.1);
+}
+.depoimentos  .col-3 img{
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px ;
+    border: 2px solid var(--cor-padrao);
+}
+.depoimento-icone{
+    font-size: 34px;
+    color: var(--cor-padrao);
+}
+.col-3 p{
+    font-size: 13px;
+    color: var(--cor-fonte-corpo-leve);
+    margin: 12px 0;
+}
+
