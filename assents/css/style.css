@@ -327,7 +327,52 @@ ul{
 .ver-produto .col-2{
     padding: 20px;
 }
-
+.ver-produto h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.ver-produto select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid var(--cor-padrao) ;
+}
+.ver-produto select:focus{
+    outline: none;
+}
+.ver-produto input{
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid var(--cor-padrao);
+}
+.ver-produto input:focus {
+    outline: none;
+}
+.ver-produto .btn{
+    border: none;
+    background: var(--cor-padrao);
+    height: 42px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ver-produto .btn:hover{
+    background: var(--cor-btn-hover);  
+}
+.ver-produto p{
+    font-size: 13px;
+}
+.img-linha{
+    display: flex;
+    justify-content: space-between;
+}
+.img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
 
 /* -----MENU CELULAR 800px------------*/
 @media only screen and(max-width:800px){
