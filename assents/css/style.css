@@ -374,6 +374,7 @@ ul{
     cursor: pointer;
 }
 
+
 /* -----MENU CELULAR 800px------------*/
 @media only screen and(max-width:800px){
     nav ul{
