@@ -8,14 +8,15 @@
         <link rel="stylesheet" href="assents/css/style.css">
     </head>
     <body>
-<!---INICIO BANNER -->
-        <div class="banner">
-<!---INICIO Container-->
+        <!---INICIO novoMenu -->
+        <div class="novoMenu">
+
+        <!---INICIO Container-->
             <div class="container">
-<!---INICIO navbar-->
+        <!---INICIO navbar-->
                 <div class="navbar">
                     <div class="logo">
-                        <img src="assents/img/logo.png" alt="Loja Virtual" width="125px">
+                        <img src="assents/img/logoEscura.png" alt="Loja Virtual" width="125px">
                     </div>
 <!---INICIO Menu de Navegação-->
                         <nav >
@@ -28,54 +29,32 @@
                             </ul>
                         </nav>
                         <!---FIM Menu de Navegação-->
-                        <img src="assents/img/carrinho.png" alt="" width="30px" heigth="30px">
+                        <img src="assents/img/carrinho2.png" alt="" width="30px" heigth="30px">
                         <img src="assents/img/menu.png" alt="" class="menu-celular" onclick="menucelular()">
                         
                 </div>
                         <!---fim navbar -->
-                        <!---Incio  texto banner -->
-                    <div class="linha">
-
-                        <div class="col-2">
-                            <h1>Escolha um novo estilo de vida</h1>
-                            <p>is simply dummy text of the printing and typesetting industry. </p>
-                            <br><a href="" class="btn">Mais informações &#8594;</a>
-                        </div>
-                        <div class="col-2">
-                            <img src="assents/img/banner-1.png" alt="">
-                        </div>
-                    </div>
-                    <!---Fim texto banner -->
+                        
                     
             </div>
 <!---fim Container -->
         </div>
 <!---FIM BANNER -->
-<!---Incio  Categorias em destaque  -->
-        <div class="categorias">
-<!---Incio corpo  Categorias em destaque  -->
-            <div class="corpo-categorias">
-<!---Incio linha do  corpo  Categorias em destaque  -->
-                    <div class="linha">
 
-                        <div class="col-3">
-                            <img src="assents/img/categoria-1.jpg" alt="">
-                        </div>
-                        <div class="col-3">
-                            <img src="assents/img/categoria-2.jpg" alt="">
-                        </div>
-                        <div class="col-3">
-                            <img src="assents/img/categoria-3.jpg" alt="">
-                        </div>
-                    </div>
-<!---FIM linha do  corpo  Categorias em destaque  -->
-            </div>
-<!---FIM corpo  Categorias em destaque  -->
-        </div>
-<!---FIM  Categorias em destaque  -->
-<!---Incio produtos em destaque  -->
+        <!---Incio produtos em destaque  -->
             <div class="corpo-categorias">
-                <h2 class="titutlo">Produtos em destaque</h2>
+                <div class="linha linha2">
+                    <h2>Todos</h2>
+                    <select name="" id="">
+                        <option value="">Mais Comprados</option>
+                        <option value="">Mais Classificados</option>
+                        <option value="">Menor Preço</option>
+                        <option value="">Maior Preços</option>
+
+                        
+                    </select>                    
+                </div>
+                
 
                 <div class="linha">
 
@@ -127,16 +106,9 @@
                             <ion-icon name="star-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
-                            
                         </div>
                         <p>R$ 997,90</p>
                     </div>
-
-                </div>
-                <h2 class="titutlo">Novos Produtos</h2>
-
-                <div class="linha">
-
                     <div class=col-4>
                         <img src="assents/img/produto-5.jpg" alt="">
                         <h4>Curso cobranças </h4>
@@ -241,116 +213,19 @@
                         </div>
                         <p>R$ 997,90</p>
                     </div>
+                    <!---FIM DOA PRODUTOS  -->
 
+                    <!---iNICIO PAGINAÇÃO  -->   
+                    <div class="paginacao">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>&#8594;</span>
+                    </div> 
+                    <!---FIM PAGINAÇÃO  -->   
                 </div>
-            </div>
-            <!---fim produtos em destaque  -->
-<!---Incio  ofertas produtos em destaque em destaque  -->
-                <div class="ofertas">
-
-                    <div class="corpo-categorias">
-
-                        <div class="linha">
-
-                            <div class="col-2">
-                               <img src="assents/img/banner-2.png" alt="" class="oferta-img"> 
-                            </div>
-                            
-                            <div class="col-2">
-                                <p>Produto exclusivo da Loja</p>
-                                <h1>Curso Plantaforma de Streaming</h1>
-                                <small>Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500.</small>
-                                <br><br> <a href="" class="btn">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!---Fim  ofertas produtos em destaque em destaque  -->
-<!---Inicio dos Depoimentos  -->
-                <div class="depoimentos">
-                    <div class="corpo-categorias">
-
-                        <div class="linha">
-                            <!---Inicio itens de depoimentos  -->
-                                <div class="col-3">
-                                    <ion-icon name="ribbon" class="depoimento-icone"></ion-icon>
-                                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500,</p>
-                                    <div class="classificacao">
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                            
-                                    </div>
-                                    <img src="assents/img/cliente-1.png" alt="">
-                                    <h3>Hortencia</h3>
-                                </div>
-                                 <div class="col-3">
-                                    <ion-icon name="ribbon" class="depoimento-icone"></ion-icon>
-                                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500,</p>
-                                    <div class="classificacao">
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                            
-                                    </div>
-                                    <img src="assents/img/cliente-2.png" alt="">
-                                    <h3>Rodrigo</h3>
-                                </div>
-                                 <div class="col-3">
-                                    <ion-icon name="ribbon" class="depoimento-icone"></ion-icon>
-                                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500,</p>
-                                    <div class="classificacao">
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                            
-                                    </div>
-                                    <img src="assents/img/cliente-3.png" alt="">
-                                    <h3>Carla</h3>
-                                </div>
-                            <!---FIM itens de depoimentos  -->
-
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <!---Fim dos Depoimentos  -->
-
-                <!---INICIO Marcas  -->
-                    <div class="marcas">
-
-                        <div class="corpo-categorias">
-
-                            <div class="linha">
-
-                                <div class="col-5">
-                                    <img src="assents/img/marca-1.png" alt="">
-                                </div>
-                                <div class="col-5">
-                                    <img src="assents/img/marca-2.png" alt="">
-                                </div>
-                                <div class="col-5">
-                                    <img src="assents/img/marca-3.png" alt="">
-                                </div>
-                                <div class="col-5">
-                                    <img src="assents/img/marca-4.png" alt="">
-                                </div>
-                                <div class="col-5">
-                                    <img src="assents/img/marca-5.png" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                <!---FIM Marcas  -->
+                
                 <!---INICIO RODAPE  -->
                     <footer class="rodape">
                             <div class="container">
