@@ -261,3 +261,40 @@ ul{
 .app-logo img{
     width: 140px;
 }
+.rodape hr{
+    border: none;
+    height: 1px;
+    background:  var(--cor-fonte);
+    margin: 20px 0;
+}
+.direitos{
+    text-align: center;
+}
+.menu-celualr{
+    width: 20px;
+    margin-left: 20px;
+    display: none;
+}
+/* ------MENU CELULAR------------*/
+@media only screen and(max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: var(--cor-btn-font);
+        width: 100%;
+        overflow: hidden;
+
+    }
+    nav ul li{
+        
+    }
+
+    .menu-celualr{
+        display: block;
+    }
+}
+
+
+
+
