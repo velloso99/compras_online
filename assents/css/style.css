@@ -107,7 +107,7 @@ p{
 }
 .col-3{
     flex-basis: 30%;
-    max-width: 250px;
+    min-width: 250px;
     margin-bottom: 30px;
 }
 .col-3 img{
@@ -117,7 +117,7 @@ p{
 }
 .col-4{
     flex-basis: 25%;
-    max-width: 200px;
+    min-width: 200px;
     padding: 10px;
     margin-bottom: 50px;
     transition:transform 0.5s ;
@@ -270,22 +270,21 @@ ul{
 .direitos{
     text-align: center;
 }
-.menu-celualar{
+.menu-celular{
     width: 28px;
     margin-left: 20px;
     display: none;
 }
-/* ------MENU CELULAR 800------------*/
+/* -----MENU CELULAR 800px------------*/
 @media only screen and(max-width:800px){
     nav ul{
         position: absolute;
-        top: 70px;
+        top: 79px;
         left: 0;
         background: var(--cor-btn-font);
         width: 100%;
         overflow: hidden;
-        transition: max-height 0.5s;
-
+        transition: max-heigth 0.5s;
     }
     nav ul li{
         display: block;
@@ -296,15 +295,13 @@ ul{
     nav ul li a{
         color: var(--cor-fonte);
     }
-
-    .menu-celualar{
+    .menu-celular{
         display: block;
         cursor: pointer;
     }
-} 
-/* ------MENU CELULAR 600------------*/
+}
+/* -----MENU CELULAR 600px------------*/
 @media only screen and(max-width:600px){
-
     .linha{
         text-align: center;
     }
@@ -317,13 +314,9 @@ ul{
     .rodape-col-3, .rodape-col-4{
         text-align: center;
     }
-    col-4 p{
+    .col-4 p{
         font-size: 24px;
     }
 
 }
-
-
-
-
 
