@@ -275,7 +275,7 @@ ul{
     margin-left: 20px;
     display: none;
 }
-/* ------MENU CELULAR------------*/
+/* ------MENU CELULAR 800------------*/
 @media only screen and(max-width:800px){
     nav ul{
         position: absolute;
@@ -299,9 +299,29 @@ ul{
 
     .menu-celualar{
         display: block;
+        cursor: pointer;
     }
 } 
-    
+/* ------MENU CELULAR 600------------*/
+@media only screen and(max-width:600px){
+
+    .linha{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .col-2 h1{
+        font-size: 27px;
+    }
+    .rodape-col-3, .rodape-col-4{
+        text-align: center;
+    }
+    col-4 p{
+        font-size: 24px;
+    }
+
+}
 
 
 
