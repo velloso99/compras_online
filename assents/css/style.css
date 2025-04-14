@@ -310,8 +310,23 @@ ul{
     background: var(--cor-padrao);
     color: var(--cor-fonte);
 }
-
-
+/* -----DETALHES DO PRODUTO------------*/
+.ver-produto{
+    margin-top: 40px;
+}
+.ver-produto .col-2 img{
+    width: 100%;
+    padding: 0;
+}
+.ver-produto #produtoimg{
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+}
+.ver-produto .col-2{
+    padding: 20px;
+}
 
 
 /* -----MENU CELULAR 800px------------*/
