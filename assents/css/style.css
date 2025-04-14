@@ -270,8 +270,8 @@ ul{
 .direitos{
     text-align: center;
 }
-.menu-celualr{
-    width: 20px;
+.menu-celualar{
+    width: 28px;
     margin-left: 20px;
     display: none;
 }
@@ -284,16 +284,25 @@ ul{
         background: var(--cor-btn-font);
         width: 100%;
         overflow: hidden;
+        transition: max-height 0.5s;
 
     }
     nav ul li{
-        
+        display: block;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: var(--cor-fonte);
     }
 
-    .menu-celualr{
+    .menu-celualar{
         display: block;
     }
-}
+} 
+    
+
 
 
 
