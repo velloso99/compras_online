@@ -437,8 +437,9 @@ th:last-child{
     height: 400px;
     margin: auto;
     background-color: var(--cor-fonte);
-    box-shadow: 30px 0 2-px 0 rgba(0,0,0,0.1);
-    /*overflow: hidden;*/
+    box-shadow: 30px 0 20px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    
 }
 .formulario span{
     display: inline-block;
@@ -448,7 +449,7 @@ th:last-child{
     color: var(--corr-fonte-corpo);
     cursor: pointer;
 }
-.btn form{
+.btn-form{
     display: inline-block;
 }
 .formulario form{
@@ -456,6 +457,7 @@ th:last-child{
     top: 110px;
     max-width: 300px;
     padding: 0 20px;
+    transition: transform 1s;
 }
 .formulario form input{
     width: 100%;
@@ -498,7 +500,7 @@ th:last-child{
     background-color: var(--cor-padrao);
     margin-top: 8px;
     transform: translateX(100px);
-    transition:transform 1s ;
+    transition:transform 1s;
 }
 
 
