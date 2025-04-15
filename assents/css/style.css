@@ -409,8 +409,15 @@ td img{
     height: 80px;
     margin-right: 18px;
 }
-
-
+.valor-total{
+    display: flex;
+    justify-content: flex-end;
+}
+.valor-total table{
+    border-top:3px solid var(--cor-padrao);
+    width: 100%;
+    max-width: 445px;
+}
 
 
 
