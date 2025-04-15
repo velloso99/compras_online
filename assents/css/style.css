@@ -416,10 +416,14 @@ td img{
 .valor-total table{
     border-top:3px solid var(--cor-padrao);
     width: 100%;
-    max-width: 445px;
+    max-width: 420px;
 }
-
-
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
 
 
 /* -----MENU CELULAR 800px------------*/
@@ -479,6 +483,9 @@ td img{
     .ver-produto h1{
         font-size: 26px;
         line-height: 26px;
+    }
+    .info-carrinho{
+        display: none;
     }
 
 }
